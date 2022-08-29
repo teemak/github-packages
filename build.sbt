@@ -1,5 +1,5 @@
-githubOwner := "teemak"
-githubRepository := "github-packages"
+//githubOwner := "teemak"
+//githubRepository := "github-packages"
 //val githubTokenSource := TokenSource.GitConfig("github.token")
 //ThisBuild / GITHUB_TOKEN := TokenSource.GitConfig("github.token")
 //ThisBuild / organization := "teemak"
