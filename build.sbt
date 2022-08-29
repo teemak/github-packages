@@ -1,6 +1,6 @@
-//githubOwner := "teemak"
-//githubRepository := "github-packages"
-//val githubTokenSource := TokenSource.GitConfig("github.token")
+githubOwner := "teemak"
+githubRepository := "github-packages"
+githubTokenSource := TokenSource.GitConfig("github.token")
 //ThisBuild / GITHUB_TOKEN := TokenSource.GitConfig("github.token")
 //ThisBuild / organization := "teemak"
 //ThisBuild / name := "github-packages"
@@ -14,6 +14,7 @@ lazy val githubPackage =
             name := "github-packages",
             resolvers ++= Seq(
                 Resolver.mavenCentral,
+                "GitHub TeeMak Apache Maven Packages" at "https://maven.pkg.github.com",
             ),
-            publishTo := Some("github-packages" at "https://maven.pkg.github.com/teemak/github-packages")
+            publishTo := Some("GitHub TeeMak Apache Maven Packages" at "https://maven.pkg.github.com")
         )
